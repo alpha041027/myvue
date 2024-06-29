@@ -9,14 +9,13 @@ const routes =[
         path:'/',
         alias:["/index","/home"],//路径别名
         component:Index,
-        children:[//嵌套路由
-            
+        children:[//嵌套路由   
             {
             path:'/content',
             component:Content
             },
             {
-            path:'/user/:id?/name/:name?',
+            path:'/user/:name?/id/:id?',
             name:'member',//定义路由名称
             component:User
             }// 动态字段以冒号开始（动态路由）

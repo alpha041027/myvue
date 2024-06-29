@@ -1,8 +1,8 @@
 <template>
 <!-- 路径传递参数 -->
-    <!-- id:{{ $route.params.id }}<br>
-    name:{{ $route.params.name}}<br> -->
-    <div class="list-comp p-6">
+  <!-- id:{{ $route.params.id }}<br>
+    name:{{ $route.params.name}}<br> -->
+  <div class="list-comp p-6">
     <h1 class="text-2xl text-center mb-6">User List</h1>
     <div class="tool-bar flex justify-end mb-6">
       <button class="add-btn bg-gray-800 text-white py-2 px-4 rounded" @click="addUser">新增</button>
@@ -52,7 +52,7 @@
     </div>
   </div>
 </template>
-      
+
 <script setup>
 import { ref } from 'vue';
 import { useUserStore } from '../store/user';
@@ -114,4 +114,3 @@ const submitFn = () => {
   showflag.value = false;
 };
 </script>
-      
